@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Девайс: магазин гатжетов</title>
+  </head>
+  <body class="catalog-page">
+
+    <header>
+      <nav class="main-navigation">
+        <a href="#" class="logo"><img src="" width="163" height="35" alt="Логотип компании"></a>
+        <ul class="user-menu">
+          <li><a>Поиск по сайту</a></li>
+          <li><a>Валентин Петухов</a></li>
+          <li><a>Войти</a></li>
+          <li><a>Сравнить</a></li>
+          <li><a>Корзина</a></li>
+        </ul>
+        <ul class="main-menu">
+          <li><a href="#">Каталог товаров</a></li>
+          <li><a href="#">Доствка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="title">Моноподы для селфи</h1>
+      <ul class="bread-crumbs">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Каталог товаров</a></li>
+        <li>Моноподы для селфи</li>
+      </ul>
+      <section class="filters">
+        <h2 class="form-title">Фильтр</h2>
+        <form action="" method="GET">
+          <fieldset class="sorting-by-kind">
+            <legend class="form-title">Сортировка:</legend>
+            <ul class="sorting-list">
+              <li><button class="sorting-active-btn" type="button">По цене</button></li>
+              <li><button type="button">По типу</button></li>
+              <li><button type="button">По популярности</button></li>
+            </ul>
+            <div class="container-sorting-btn">
+              <button class="sorting-btn-up" type="button"></button>
+              <button class="sorting-btn-down" type="button"></button>
+            </div>
+          </fieldset>
+          <fieldset class="price-level">
+            <legend class="sub-title-form">Стоимость</legend>
+            <button></button>
+            <button></button>
+          </fieldset>
+
+          <fieldset class="sorting-color">
+            <legend class="sub-title-form">Цвет</legend>
+            <input type="checkbox" id="black" name="черный" checked>
+            <label for="black">Черный</label>
+            <input type="checkbox" id="white" name="белый">
+            <label for="white">Белый</label>
+            <input type="checkbox" id="blue" name="синий" checked>
+            <label for="blue">Белый</label>
+            <input type="checkbox" id="red" name="красный" checked>
+            <label for="red">Красный</label>
+            <input type="checkbox" id="pink" name="розовый">
+            <label for="pink">Розовый</label>
+          </fieldset>
+
+          <fieldset>
+            <legend class="sub-title-form">Bluetooth</legend>
+            <input type="radio" name="Есть" id="yes">
+            <label for="yes">Есть</label>
+            <input type="radio" name="Нет" id="no">
+            <label for="no">Нет</label>
+            <button class="btn form-btn">Показать</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <section>
+        <h2 class="catalog">Список товара</h2>
+        <ul class="catalog-list">
+          <li>
+            <div>
+              <img src="img/amateur-selfie-stick.jpg" width="360" height="380" alt="Любительская селфи палка">
+              <a class="btn btn-item item-hidden" href="#">В корзину</a>      <!-- при наведении -->
+              <p class="item-hover-info item-hidden">Добавить к сравнению</p> <!-- при наведении -->
+            </div>
+            <p>Любителькая селфи палка</p>
+            <span class="price-item">500 руб.</span>
+          </li>
+          <li>
+            <div>
+              <img src="img/amateur-selfie-stick.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+              <a class="btn btn-item item-hidden" href="#">В корзину</a>      <!-- при наведении -->
+              <p class="item-hover-info item-hidden">Добавить к сравнению</p> <!-- при наведении -->
+            </div>
+            <p>Профессиональная селфи-палка</p>
+            <span class="price-item">1 500 руб.</span>
+          </li>
+          <li>
+            <div>
+              <img src="img/amateur-selfie-stick.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+              <a class="btn btn-item item-hidden" href="#">В корзину</a>      <!-- при наведении -->
+              <p class="item-hover-info item-hidden">Добавить к сравнению</p> <!-- при наведении -->
+            </div>
+            <p>Непотопляемая селфи-палка</p>
+            <span class="price-item">2 500 руб.</span>
+          </li>
+          <li>
+            <div>
+              <img src="img/amateur-selfie-stick.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+              <a class="btn btn-item item-hidden" href="#">В корзину</a>      <!-- при наведении -->
+              <p class="item-hover-info item-hidden">Добавить к сравнению</p> <!-- при наведении -->
+            </div>
+            <p>Селфи-палка «Следуй за мной»</p>
+            <span class="price-item">4 900 руб.</span>
+          </li>
+        </ul>
+        <div class="pagination-container">
+          <a class="pagination-back" href="#" aria-label="Перейти назад">Назад</a>
+          <ul>
+            <li><a>1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+          </ul>
+          <a class="pagination-forward" href="#" aria-label="Перейти вперед">Вперед</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <a href="#" class="logo logo-footer"><img src="" width="163" height="35" alt="Логотип компании"></a>
+        <p class="addres-footer">г. Москва, ул. Строителей, 15 </p>
+      </div>
+
+      <div>
+        <ul class="foonter-menu">
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="social-list">
+          <li class="social-item social-facebook"><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li class="social-item social-instagram"><a href="#"><span class="visually-hidden">Инстаграмм</span></a></li>
+          <li class="social-item social-twitter"><a href="#"><span class="visually-hidden">Твиттер</span></a></li>
+        </ul>
+      </div>
+        <ul class="user-menu-footer">
+          <li><a href="#">Войти</a></li>
+          <li><a href="#">Сравнить</a></li>
+          <li><a href="#">Корзина</a></li>
+        </ul>
+        <p class="telephone-footer">Тел.: +7 (495) 495-95-95</p>
+        <a href="#" class="logo-html-academy"></a>
+      <div>
+
+      </div>
+    </footer>
+
+  </body>
+</html>
