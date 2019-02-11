@@ -1,0 +1,36 @@
+.categories {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.categories__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.categories__item {
+  &::before {
+    content: "";
+    display: block;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 33px;
+
+    background-color: #f7e296;
+  }
+
+  & a {
+    display: inline-block;
+    width: 160px;
+
+    font-family: "gilroyextrabold", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.05mm;
+    color: #000000;
+    background-color: #ffffff;
+  }
+}
