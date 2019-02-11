@@ -1,6 +1,7 @@
 @font-face {
   font-family: "gilroyextrabold";
-  src: url("../fonts/gilroyextrabold-webfont.woff") format("woff2"),
+  src: local("giloryextrabold"),
+    url("../fonts/gilroyextrabold-webfont.woff") format("woff2"),
     url("../fonts/gilroyextrabold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -8,7 +9,8 @@
 
 @font-face {
   font-family: "gilroylight";
-  src: url("../fonts/gilroylight-webfont.woff2") format("woff2"),
+  src: local("gilroylight"),
+    url("../fonts/gilroylight-webfont.woff2") format("woff2"),
     url("../fonts/gilroylight-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -16,7 +18,8 @@
 
 @font-face {
   font-family: "open_sanslight";
-  src: url("../fonts/opensans-light-webfont.woff2") format("woff2"),
+  src: local("open_sanslight"),
+    url("../fonts/opensans-light-webfont.woff2") format("woff2"),
     url("../fonts/opensans-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -24,7 +27,8 @@
 
 @font-face {
   font-family: "open_sansregular";
-  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"),
+  src: local("open_sansregular"),
+    url("../fonts/opensans-regular-webfont.woff2") format("woff2"),
     url("../fonts/opensans-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
