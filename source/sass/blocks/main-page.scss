@@ -1,0 +1,9 @@
+.main-page {
+  color: #000000;
+  background-color: #ffffff;
+
+  & main {
+    display: flex;
+    flex-direction: column;
+  }
+}
