@@ -1,49 +1,111 @@
 .header {
   width: 1160px;
   min-height: 299px;
-  margin: 40px auto 0;
+  margin: 35px auto 0;
   padding: 50px 60px;
 
+  font-family: "open_sanslight", "Aria", sans-serif;
+  font-size: 15px;
+  line-height: 36px;
   color: #000000;
+
   background-color: #f7e296;
 }
 
-.header-navigation {
+.header__navigation {
+  position: relative;
+
   display: flex;
   flex-direction: column;
+}
+
+.header__logo {
+  position: absolute;
+  top: 0;
+  margin-top: -66px;
+
+  display: block;
 }
 
 .header__top-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
+
+  font-family: "open_sanslight", "Aria", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #000000;
+
+  background-color: #f7e296;
 }
 
-.header-navigation__user-menu {
+.header__search {
+  margin: 0;
+  padding: 0;
+}
+
+.header__form button {
+  display: none;
+  font-family: "open_sanslight", "Aria", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #000000;
+
+  background-color: #f7e296;
+}
+
+.header__user-menu {
   display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
+
+  & a {
+    font-family: "open_sanslight", "Aria", sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    color: #000000;
+
+    background-color: #f7e296;
+  }
 }
 
-.header-navigation__user-menu li:nth-child(2) {
+.header__user-menu li:nth-child(2) {
   margin-right: 65px;
 }
 
-.header-navigation__user-menu li:nth-child(1) {
+.header__user-menu li:nth-child(1) {
   margin-right: 238px;
 }
 
-.header-navigation__menu {
+.header__main-menu {
   display: flex;
   margin: 0;
   padding: 0;
 
   list-style: none;
+
+  & > li > a {
+    display: block;
+
+    font-family: "gilroyextrabold", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.9mm;
+    text-transform: uppercase;
+    color: #000000;
+
+    background-color: #f7e296;
+  }
 }
 
-.header-navigation__menu li:nth-child(2) {
+.header__main-menu > li:nth-child(2) {
   margin-right: 39px;
 }
 
-.header-navigation__menu li:nth-child(3) {
+.header__main-menu > li:nth-child(3) {
   margin-right: 114px;
 }
 
@@ -51,29 +113,3 @@
   position: relative;
   margin-right: auto;
 }
-
-.catalog-menu {
-  position: absolute;
-  top: 35px;
-
-  display: flex;
-  flex-wrap: wrap;
-  width: 553px;
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-
-  & li {
-    margin-right: 57px;
-  }
-
-  & li:nth-child(3) {
-    margin-right: 0;
-  }
-
-  & li:nth-child(5) {
-    margin-right: 225px;
-  }
-}
-
