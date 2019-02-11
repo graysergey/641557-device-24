@@ -1,14 +1,27 @@
 .catalog-menu {
   position: absolute;
   top: 35px;
+  left: 0;
 
-  display: flex;
+  display: none;
   flex-wrap: wrap;
-  width: 553px;
+  width: 1160px;
   margin: 0;
-  padding: 0;
+  margin-left: -60px;
+  padding-left: 60px;
+  padding-right: 540px;
+  padding-bottom: 33px;
 
   list-style: none;
+  background-color: #f7e296;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 570px;
+    height: 60px;
+    margin-top: -40px;
+  }
 
   & li {
     margin-right: 57px;

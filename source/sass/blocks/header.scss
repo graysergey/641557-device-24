@@ -11,6 +11,10 @@
   color: #000000;
 
   background-color: #f7e296;
+
+  &--catalog-page {
+    min-height: 186px;
+  }
 }
 
 .header__navigation {
@@ -65,11 +69,12 @@
 
 .header__user-menu {
   display: flex;
-  list-style: none;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 505px;
   margin: 0;
   padding: 0;
+  list-style: none;
 
   & li:nth-child(1) {
     margin-left: 27px;
@@ -111,6 +116,7 @@
 
 .header__main-menu {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
@@ -141,4 +147,12 @@
 .header__item-catalog {
   position: relative;
   margin-right: auto;
+
+  &:hover .catalog-menu {
+    display: flex;
+  }
+
+  &:hover .header--catalog-page {
+    min-height: 299px;
+  }
 }
