@@ -66,11 +66,14 @@
 .header__user-menu {
   display: flex;
   list-style: none;
+  justify-content: space-between;
+  width: 505px;
   margin: 0;
   padding: 0;
 
   & li:nth-child(1) {
-    margin-right: 239px;
+    margin-left: 27px;
+    margin-right: auto;
   }
 
   & li:nth-child(2) {
@@ -89,6 +92,20 @@
     color: #000000;
 
     background-color: #f7e296;
+  }
+
+  &--monopods {
+    & li:nth-child(2) {
+      margin-right: 85px;
+    }
+
+    & li:nth-child(3) {
+      margin-right: 65px;
+    }
+
+    & li:nth-child(4) {
+      margin-right: 3px;
+    }
   }
 }
 
