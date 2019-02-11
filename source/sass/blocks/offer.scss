@@ -4,7 +4,7 @@
   width: 1160px;
   min-height: 480px;
   margin: 0 auto;
-  padding: 0 60px;
+  padding: 0 80px;
 
   background-color: rgba(222, 235, 240, 0.575); //Временный цвет для удобства стилизации
 }
@@ -27,4 +27,28 @@
   font-size: 0;
   border: 1px solid #000000;
   border-radius: 12px;
+}
+
+.offer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.offer__item {
+  display: flex;
+}
+
+.offer__item:nth-child(2),
+.offer__item:nth-child(3) { // Временно выключает второй и третий слайды
+  display: none;
+}
+
+.offer__image {
+  position: relative;
+  margin-top: -111px;
+  margin-left: 10px;
+
+
+  display: block;
 }
