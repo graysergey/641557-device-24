@@ -12,3 +12,68 @@
   display: flex;
   flex-direction: column;
 }
+
+.header__top-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-navigation__user-menu {
+  display: flex;
+  list-style: none;
+}
+
+.header-navigation__user-menu li:nth-child(2) {
+  margin-right: 65px;
+}
+
+.header-navigation__user-menu li:nth-child(1) {
+  margin-right: 238px;
+}
+
+.header-navigation__menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.header-navigation__menu li:nth-child(2) {
+  margin-right: 39px;
+}
+
+.header-navigation__menu li:nth-child(3) {
+  margin-right: 114px;
+}
+
+.header__item-catalog {
+  position: relative;
+  margin-right: auto;
+}
+
+.catalog-menu {
+  position: absolute;
+  top: 35px;
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 553px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  & li {
+    margin-right: 57px;
+  }
+
+  & li:nth-child(3) {
+    margin-right: 0;
+  }
+
+  & li:nth-child(5) {
+    margin-right: 225px;
+  }
+}
+

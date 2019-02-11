@@ -28,6 +28,10 @@ body {
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 a[href] {
   cursor: pointer;
 }
