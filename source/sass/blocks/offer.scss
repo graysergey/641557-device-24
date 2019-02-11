@@ -37,6 +37,7 @@
 
 .offer__item {
   display: flex;
+
 }
 
 .offer__item:nth-child(2),
@@ -48,7 +49,19 @@
   position: relative;
   margin-top: -111px;
   margin-left: 10px;
-
+  margin-right: 126px;
 
   display: block;
+}
+
+.offer__title {
+  position: relative;
+  margin-top: -33px;
+
+  font-family: "gilroyextrabold", "Arial", sans-serif;
+  font-size: 47px;
+  font-weight: bold;
+  line-height: 56px;
+  letter-spacing: 0.1mm;
+  color: #000000;
 }
