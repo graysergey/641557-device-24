@@ -1,0 +1,14 @@
+.brands {
+  width: 100%;
+  height: 100px;
+}
+
+.brands__list {
+  display: flex;
+  justify-content: space-around;
+  width: 1197px;
+  margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
+}

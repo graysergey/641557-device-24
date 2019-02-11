@@ -1,0 +1,17 @@
+.servises {
+  display: flex;
+  width: 100%;
+  min-height: 288px;
+  margin-bottom: 95px;
+
+  background-color: #e5e5e5;
+}
+
+.servises__item--guarantee {
+  display: none;
+}
+
+.servises__item--credit {
+  display: none;
+}
+
