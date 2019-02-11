@@ -1,9 +1,21 @@
-html {
-  box-sizing: border-box;
-}
+@import "fonts.scss";
+@import "normalize.scss";
+@import "global.scss";
+@import "blocks/about-us.scss";
+@import "blocks/brands.scss";
+@import "blocks/bread-crumbs.scss";
+@import "blocks/catalog-menu.scss";
+@import "blocks/catalog-page.scss";
+@import "blocks/catalog.scss";
+@import "blocks/categories.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer.scss";
+@import "blocks/main-navigation.scss";
+@import "blocks/main-page.scss";
+@import "blocks/offer.scss";
+@import "blocks/pagination.scss";
+@import "blocks/popup-feedback.scss";
+@import "blocks/popup-map.scss";
+@import "blocks/servises.scss";
+@import "blocks/sorting.scss";
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
