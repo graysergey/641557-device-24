@@ -1,0 +1,146 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  min-height: 323px;
+  padding-top: 65px;
+
+  color: #ffffff;
+  background-color: #464646;
+}
+
+.footer__left-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: 480px;
+  padding-left: 140px;
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.footer__address {
+  margin: 0;
+
+  font-family: "open_sanslight", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.footer__center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 480px;
+  padding-top: 72px;
+}
+
+.footer__menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 63px;
+
+  list-style: none;
+}
+
+.footer__menu-item {
+  margin-right: 36px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  & a {
+    display: block;
+
+    font-family: "gilroyextrabold", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.9mm;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    background-color: #464646;
+  }
+}
+
+.footer__social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer__social-item {
+  width: 32px;
+  height: 32px;
+  margin-right: 23px;
+  margin-bottom: 23px;
+
+  border-radius: 32px;
+  background-color: #7e7e7e;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.footer__right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  max-width: 480px;
+  padding-right: 140px;
+}
+
+.footer__user-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 325px;
+  margin: 0;
+  padding: 0;
+  margin-top: -5px;
+  margin-bottom: 35px;
+
+  list-style-type: none;
+
+  & a {
+    padding-left: 27px;
+    font-family: "open_sanslight", "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 36px;
+    color: #ffffff;
+
+    background-color: #464646;
+  }
+}
+
+.footer__telephone {
+  display: inline-block;
+
+  font-family: "open_sanslight", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #ffffff;
+
+  background-color: #464646;
+}
+
+.logo-html-academy {
+  display: block;
+  width: 27px;
+  height: 35px;
+
+  background-color: #ffc600;
+}
