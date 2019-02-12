@@ -1,0 +1,56 @@
+.about-us {
+  padding-right: 135px;
+
+  & p {
+    margin: 0;
+    margin-bottom: 31px;
+
+    font-family: "open_sanslight", "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  & p:nth-of-type(2) {
+    letter-spacing: -0.03mm;
+  }
+
+  & p:last-of-type {
+    margin-bottom: 67px;
+  }
+}
+
+.about-us__like-h1 {
+  margin: 0;
+  margin-bottom: 44px;
+
+  font-family: "gilroyextrabold", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.about-us__list-info {
+  margin: 0;
+  padding: 0;
+  margin-left: 37px;
+  margin-bottom: 63px;
+
+  font-family: "gilroyextrabold", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 40px;
+  list-style: none;
+  letter-spacing: 0.2mm;
+}
+
+.about-us__btn {
+  display: block;
+  margin-left: 23px;
+  // margin-bottom: 60px;
+
+  font-family: "gilroyextrabold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1mm;
+  color: #000000;
+}
