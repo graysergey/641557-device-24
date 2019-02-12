@@ -3,19 +3,20 @@
 
   & p {
     margin: 0;
-    margin-bottom: 31px;
+    margin-bottom: 29px;
 
     font-family: "open_sanslight", "Arial", sans-serif;
     font-size: 15px;
     line-height: 30px;
   }
 
-  & p:nth-of-type(2) {
-    letter-spacing: -0.03mm;
+  & p:first-of-type {
+    letter-spacing: 0.03mm;
   }
 
   & p:last-of-type {
     margin-bottom: 67px;
+    letter-spacing: -0.04mm;
   }
 }
 
@@ -32,7 +33,7 @@
   margin: 0;
   padding: 0;
   margin-left: 37px;
-  margin-bottom: 63px;
+  margin-bottom: 61px;
 
   font-family: "gilroyextrabold", "Arial", sans-serif;
   font-size: 15px;
@@ -44,7 +45,6 @@
 .about-us__btn {
   display: block;
   margin-left: 23px;
-  // margin-bottom: 60px;
 
   font-family: "gilroyextrabold", "Arial", sans-serif;
   font-size: 18px;
