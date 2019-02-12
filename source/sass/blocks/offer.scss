@@ -81,7 +81,7 @@
 .offer_btn {
   display: block;
   margin-left: 43px;
-  margin-bottom: 60px;
+  margin-bottom: 56px;
 
   font-family: "gilroyextrabold", "Arial", sans-serif;
   font-size: 18px;
@@ -90,4 +90,26 @@
   text-transform: uppercase;
   letter-spacing: 1mm;
   color: #000000;
+}
+
+.offer__table {
+  & td {
+    width: 160px;
+
+    font-family: "gilroylight", "Arial", sans-serif;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  & td:nth-of-type(2) {
+    width: 138px;
+  }
+
+  & th {
+    padding-top: 7px;
+
+    font-family: "open_sanslight", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+  }
 }
