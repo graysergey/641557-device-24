@@ -1,11 +1,16 @@
 .servises {
-  display: flex;
   width: 100%;
   min-height: 288px;
   margin-bottom: 95px;
-  padding: 0 140px;
 
   background-color: #e5e5e5;
+}
+
+.servises__container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .servises__list {

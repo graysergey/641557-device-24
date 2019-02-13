@@ -38,8 +38,8 @@
   justify-content: space-between;
 }
 
-.offer__item:nth-child(1),
-.offer__item:nth-child(2) { // Временно выключает второй и третий слайды
+.offer__item:nth-child(2),
+.offer__item:nth-child(3) { // Временно выключает второй и третий слайды
   display: none;
 }
 
