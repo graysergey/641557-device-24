@@ -51,62 +51,61 @@
       </div>
 
       <div class="catalog-container">
-        <section class="filters">
-          <h2 class="filters__title">Фильтр</h2>
-          <form class="filters__form" action="https://echo.htmlacademy.ru" method="GET">
+        <div class="catalog-container__positioner">
+          <section class="filters">
+            <h2 class="filters__title">Фильтр:</h2>
 
-            <fieldset class="filters__price-level">
-              <legend class="filters__sub-title">Стоимость</legend>
-              <div class="filters__range-container">
-                <div class="filters__container-scale">
-                  <div class="filters__container-bar"></div>
+            <form class="filters__form" action="https://echo.htmlacademy.ru" method="GET">
+              <fieldset class="filters__price-level">
+                <legend class="filters__sub-title">Стоимость</legend>
+                <div class="filters__range-container">
+                  <div class="filters__container-scale">
+                    <div class="filters__container-bar"></div>
+                  </div>
+                  <div class="filters__range-button-left"></div>
+                  <div class="filters__range-button-right"></div>
                 </div>
-                <div class="filters__range-button-left"></div>
-                <div class="filters__range-button-right"></div>
-              </div>
-            </fieldset>
+              </fieldset>
 
-            <fieldset class="filters__sorting-color">
-              <legend class="filters__sub-title">Цвет</legend>
-              <input type="checkbox" id="black" name="black" checked>
-              <label for="black">Черный</label>
-              <input type="checkbox" id="white" name="white">
-              <label for="white">Белый</label>
-              <input type="checkbox" id="blue" name="blue" checked>
-              <label for="blue">Белый</label>
-              <input type="checkbox" id="red" name="red" checked>
-              <label for="red">Красный</label>
-              <input type="checkbox" id="pink" name="pink">
-              <label for="pink">Розовый</label>
-            </fieldset>
+              <fieldset class="filters__sorting-color">
+                <legend class="filters__sub-title">Цвет</legend>
+                <input type="checkbox" id="black" name="black" checked>
+                <label for="black">Черный</label>
+                <input type="checkbox" id="white" name="white">
+                <label for="white">Белый</label>
+                <input type="checkbox" id="blue" name="blue" checked>
+                <label for="blue">Белый</label>
+                <input type="checkbox" id="red" name="red" checked>
+                <label for="red">Красный</label>
+                <input type="checkbox" id="pink" name="pink">
+                <label for="pink">Розовый</label>
+              </fieldset>
 
-            <fieldset class="filters__bluetooth">
-              <legend class="filters__sub-title">Bluetooth</legend>
-              <input type="radio" name="bluetooth" id="yes">
-              <label for="yes">Есть</label>
-              <input type="radio" name="bluetooth" id="no">
-              <label for="no">Нет</label>
-            </fieldset>
-            <button class="filters__btn btn" type="submit">Показать</button>
-          </form>
-        </section>
-
-        <div class="catalog-container__right">
-          <section class="sorting">
-            <h2 class="sorting__title">Сортировка:</h2>
-            <ul class="sorting__list">
-              <li><a class="sorting__active-btn" href="by-price.html">По цене</a></li>
-              <li><a class="sorting__btn" href="by-type.html">По типу</a></li>
-              <li><a class="sorting__btn" href="by-popularity.html">По популярности</a></li>
-            </ul>
-            <div class="sorting__container-btn">
-              <button class="sorting__btn-up" type="button"></button>
-              <button class="sorting__btn-down" type="button"></button>
-            </div>
+              <fieldset class="filters__bluetooth">
+                <legend class="filters__sub-title">Bluetooth</legend>
+                <input type="radio" name="bluetooth" id="yes">
+                <label for="yes">Есть</label>
+                <input type="radio" name="bluetooth" id="no">
+                <label for="no">Нет</label>
+              </fieldset>
+              <button class="filters__btn btn" type="submit">Показать</button>
+            </form>
           </section>
 
           <section class="catalog">
-            <h2 class="visually-hidden">Список товара</h2>
+            <div class="sorting">
+              <h3 class="sorting__title">Сортировка:</h3>
+              <ul class="sorting__list">
+                <li><a class="sorting__btn sorting__btn--active" href="by-price.html">По цене</a></li>
+                <li><a class="sorting__btn" href="by-type.html">По типу</a></li>
+                <li><a class="sorting__btn" href="by-popularity.html">По популярности</a></li>
+              </ul>
+              <div class="sorting__container-btn">
+                <button class="sorting__btn-up" type="button"></button>
+                <button class="sorting__btn-down" type="button"></button>
+              </div>
+            </div>
+
             <ul class="catalog__list">
               <li class="catalog__item">
                 <div class="catalog__img-container">
@@ -154,8 +153,8 @@
               </ul>
               <a class="pagination__forward" href="next.html" aria-label="Перейти вперед">Вперед</a>
             </div>
-          </section>
-        </div> <!--<div class="catalog-container__right">-->
+          </section> <!--<div class="catalog-container__right">-->
+        </div> <!--<div class="catalog-container__positioner">-->
       </div> <!--<div class="catalog-container">-->
     </main>
 

@@ -1,0 +1,17 @@
+.filters {
+  position: relative;
+  width: 270px;
+  margin-left: 60px;
+}
+
+.filters__title {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  margin: 0;
+  font-family: "gilroyextrabold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.9mm;
+  text-transform: uppercase;
+}
