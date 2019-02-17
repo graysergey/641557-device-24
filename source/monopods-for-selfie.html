@@ -57,18 +57,18 @@
 
             <form class="filters__form" action="https://echo.htmlacademy.ru" method="GET">
               <fieldset class="filters__price-level">
-                <legend class="filters__sub-title">Стоимость</legend>
+                <legend class="filters__sub-title filters__sub-title--level">Стоимость</legend>
                 <div class="filters__range-container">
                   <div class="filters__container-scale">
-                    <div class="filters__container-bar"></div>
+                    <div class="filters__container-bar">
+                        <div class="filters__toggle filters__toggle--min"></div>
+                        <div class="filters__toggle filters__toggle--max"></div>
+                    </div>
                   </div>
-                  <div class="filters__range-button-left"></div>
-                  <div class="filters__range-button-right"></div>
-                </div>
               </fieldset>
 
               <fieldset class="filters__sorting-color">
-                <legend class="filters__sub-title">Цвет</legend>
+                <legend class="filters__sub-title filters__sub-title--color">Цвет</legend>
                 <input type="checkbox" id="black" name="black" checked>
                 <label for="black">Черный</label>
                 <input type="checkbox" id="white" name="white">
@@ -82,7 +82,7 @@
               </fieldset>
 
               <fieldset class="filters__bluetooth">
-                <legend class="filters__sub-title">Bluetooth</legend>
+                <legend class="filters__sub-title filters__sub-title--Bluetooth">Bluetooth</legend>
                 <input type="radio" name="bluetooth" id="yes">
                 <label for="yes">Есть</label>
                 <input type="radio" name="bluetooth" id="no">

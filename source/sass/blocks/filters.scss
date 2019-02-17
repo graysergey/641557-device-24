@@ -9,9 +9,158 @@
   align-items: center;
   height: 70px;
   margin: 0;
+
   font-family: "gilroyextrabold", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.9mm;
   text-transform: uppercase;
+}
+
+.filters__form {
+  width: 200px;
+  padding-top: 82px;
+
+  & fieldset {
+    position: relative;
+  }
+
+  & fieldset::before {
+    content: "";
+    position: absolute;
+    top: -13px;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+  }
+}
+
+.filters__price-level {
+  width: 200px;
+  height: 132px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+
+  border: none;
+}
+
+.filters__container-scale {
+  width: 100%;
+  height: 2px;
+  background-color: #dbdbdb;
+}
+
+.filters__container-bar {
+  position: relative;
+  width: 130px;
+  height: 2px;
+  margin-left: -5px;
+  background-color: #91c92f;
+}
+
+.filters__toggle {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 0 0 #dadada;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 4px;
+    height: 4px;
+
+    border-radius: 4px;
+    background-color: #ababab;
+  }
+}
+
+.filters__toggle--max {
+  left: auto;
+  right: 0;
+}
+
+.filters__sub-title {
+  // padding: 20px 0;
+  font-family: "gilroyextrabold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+
+  &--level {
+    margin-bottom: 34px;
+  }
+
+  &--color {
+    margin-bottom: 17px;
+  }
+
+  &--Bluetooth {
+    margin-bottom: 17px;
+  }
+}
+
+.filters__sorting-color {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 44px;
+
+  border: none;
+
+  & input {
+    display: none;
+  }
+
+  & label {
+    margin-left: 37px;
+
+    font-size: 14px;
+    line-height: 40px;
+  }
+}
+
+.filters__bluetooth {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 39px;
+
+  border: none;
+
+  & input {
+    display: none;
+  }
+
+  & label {
+    margin-left: 37px;
+
+    font-size: 14px;
+    line-height: 40px;
+  }
+}
+
+.filters__btn {
+  padding: 0;
+  margin-left: 39px;
+
+  font-family: "gilroyextrabold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1mm;
+  color: #000000;
+
+  border: none;
+  background-color: #efefef;
 }
