@@ -123,6 +123,11 @@
 
     background-color: #464646;
   }
+
+  & .footer__user-exit {
+    color: rgba(255, 255, 255, 0.3);
+    background: #464646;
+  }
 }
 
 .footer__telephone {
@@ -143,4 +148,14 @@
   height: 35px;
 
   background-color: #ffc600;
+}
+
+.footer__user-menu--catalog {
+  position: relative;
+}
+
+.footer__user {
+  position: absolute;
+  left: -155px;
+  letter-spacing: 0.1mm;
 }
