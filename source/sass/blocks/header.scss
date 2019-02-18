@@ -30,6 +30,14 @@
   margin-top: -59px;
 
   display: block;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .header__top-container {
