@@ -10,10 +10,10 @@ var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
-var svgstore = require("gulp-svgstore");
-var posthtml = require("gulp-posthtml");
+var svgstore = require("gulp-svgstore"); // Создает спрайт svg картинок
+var posthtml = require("gulp-posthtml"); // Шаблонизатор html файлов
 var del = require("del");
-var include = require("posthtml-include");
+var include = require("posthtml-include");  // Плагин для работы с gulp-posthtml (вставляет в разметку спрайт)
 var htmlmin = require("gulp-htmlmin");
 var uglify = require('gulp-uglify');
 var pump = require('pump');
@@ -69,12 +69,12 @@ gulp.task("webp", function() {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
+  return gulp.src("source/img/icons/*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("html", function () {
@@ -82,7 +82,7 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin({ collapWhitespace: true }))
     .pipe(gulp.dest("build"));
 });
 
@@ -133,7 +133,6 @@ gulp.task("build", gulp.series(
   "sprite",
   "html",
   "images",
-  "webp",
   "compressjs"
 ));
 

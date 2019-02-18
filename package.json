@@ -1,8 +1,8 @@
 {
-  "name": "sedona",
-  "version": "15.0.0",
+  "name": "device",
+  "version": "24.0.0",
   "private": true,
-  "description": "Личный проект «Седона» от HTML Academy",
+  "description": "Личный проект «Девайс» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.1.x",
