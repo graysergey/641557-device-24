@@ -34,8 +34,68 @@
 }
 
 .offer__item {
+  position: relative;
   display: flex;
   justify-content: space-between;
+
+  &:nth-child(1)::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "01";
+    display: inline-block;
+    margin-top: -122px;
+    margin-right: -11px;
+
+    font-family: "gilroyextrabold", "Arial", sans-serif;
+    font-size: 179px;
+    line-height: 179px;
+    color: #ffffff;
+  }
+
+  &:nth-child(2)::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "02";
+    display: inline-block;
+    margin-top: -122px;
+    margin-right: -11px;
+
+    font-family: "gilroyextrabold", "Arial", sans-serif;
+    font-size: 179px;
+    line-height: 179px;
+    color: #ffffff;
+  }
+
+  &:nth-child(3)::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "03";
+    display: inline-block;
+    margin-top: -122px;
+    margin-right: -11px;
+
+    font-family: "gilroyextrabold", "Arial", sans-serif;
+    font-size: 179px;
+    line-height: 179px;
+    color: #ffffff;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    content: "";
+    width: 100px;
+    height: 7px;
+    margin-top: -74px;
+    margin-right: 400px;
+
+    background-color: #ffffff;
+  }
 }
 
 .offer__item:nth-child(2),
