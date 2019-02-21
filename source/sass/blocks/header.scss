@@ -166,6 +166,51 @@
   }
 }
 
+.header__come-in a {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    content: "";
+    width: 13px;
+    height: 12px;
+    margin-left: -25px;
+    background-image: url("../img/icons/user.svg");
+  }
+}
+
+.header__compare a {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    content: "";
+    width: 10px;
+    height: 10px;
+    margin-left: -21px;
+    background-image: url("../img/icons/compare.svg");
+  }
+}
+
+.header__backet a {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    content: "";
+    width: 12px;
+    height: 12px;
+    margin-left: -24px;
+    background-image: url("../../img/icons/basket.svg");
+  }
+}
+
 .header__main-menu {
   display: flex;
   flex-wrap: wrap;
