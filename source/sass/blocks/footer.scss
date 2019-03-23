@@ -78,7 +78,6 @@
 }
 
 .footer__menu-item {
-
   & a {
     display: block;
 
@@ -90,6 +89,14 @@
     color: #ffffff;
 
     background-color: #464646;
+  }
+
+  & a:hover {
+    opacity: 0.6;
+  }
+
+  & a:active {
+    opacity: 0.3;
   }
 }
 
