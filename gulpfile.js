@@ -1,22 +1,21 @@
 "use strict";
-
-var gulp = require("gulp");
-var sass = require("gulp-sass");
-var plumber = require("gulp-plumber");
-var postcss = require("gulp-postcss");
-var autoprefixer = require("autoprefixer");
-var server = require("browser-sync").create();
-var csso = require("gulp-csso");
-var rename = require("gulp-rename");
-var imagemin = require("gulp-imagemin");
-var webp = require("gulp-webp");
-var svgstore = require("gulp-svgstore"); // Создает спрайт svg картинок
-var posthtml = require("gulp-posthtml"); // Шаблонизатор html файлов
-var del = require("del");
-var include = require("posthtml-include");  // Плагин для работы с gulp-posthtml (вставляет в разметку спрайт)
-var htmlmin = require("gulp-htmlmin");
-var uglify = require('gulp-uglify');
-var pump = require('pump');
+var gulp = require("gulp"); // сам сборщик
+var sass = require("gulp-sass"); // sass препроцессор
+var plumber = require("gulp-plumber"); // отслеживает ошибки, продолжает выполнение потока в случае ошибки
+var postcss = require("gulp-postcss"); // плагин для парсинга css
+var autoprefixer = require("autoprefixer"); // автопрефексер, работает в потоке postcss
+var server = require("browser-sync").create();  // автоматически перезагружает страницу
+var csso = require("gulp-csso"); // минификатор css
+var rename = require("gulp-rename"); // плагин для переименования файлов
+var imagemin = require("gulp-imagemin"); // сжатие графики без потерь
+var webp = require("gulp-webp"); // конвертирует графику в формат webp
+var svgstore = require("gulp-svgstore"); // сборщик спрайтов
+var posthtml = require("gulp-posthtml"); // парсер HTML
+var del = require("del"); // плагин для удаления файлов/папок
+var include = require("posthtml-include"); // плагин для posthtml, позволяет использовать <include> в HTML
+var htmlmin = require("gulp-htmlmin"); // минификатор HTML
+var uglify = require('gulp-uglify'); // минификатор JS
+var pump = require('pump'); // передает ошибки в консоль в нормальном виде
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
