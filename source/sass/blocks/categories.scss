@@ -12,16 +12,6 @@
 }
 
 .categories__item {
-  margin-bottom: 180px;
-  &::before {
-    content: "";
-    display: block;
-    width: 160px;
-    height: 160px;
-    margin-bottom: 33px;
-
-    background-color: #f7e296;
-  }
 
   & a {
     display: inline-block;
@@ -33,5 +23,113 @@
     letter-spacing: 0.05mm;
     color: #000000;
     background-color: #ffffff;
+  }
+}
+
+.categories__item--virtual {
+  position: relative;
+  margin-bottom: 180px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 33px;
+
+    background-color: #f7e296;
+    background-image: url("../img/virtual-reality.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.categories__item--monopods {
+  position: relative;
+  margin-bottom: 180px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 33px;
+
+    background-color: #f7e296;
+    background-image: url("../img/monopods-for-selfie.svg");
+    background-repeat: no-repeat;
+    background-position: center 95%;
+  }
+}
+
+.categories__item--cameras {
+  position: relative;
+  margin-bottom: 180px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 33px;
+
+    background-color: #f7e296;
+    background-image: url("../img/action-cameras.svg");
+    background-repeat: no-repeat;
+    background-position: 54%;
+  }
+}
+
+.categories__item--braslets {
+  position: relative;
+  margin-bottom: 180px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 33px;
+
+    background-color: #f7e296;
+    background-image: url("../img/fitness-braslet.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.categories__item--watch {
+  position: relative;
+  margin-bottom: 180px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 33px;
+
+    background-color: #f7e296;
+    background-image: url("../img/smart-watch.svg");
+    background-repeat: no-repeat;
+    background-position: 54%;
+  }
+}
+
+.categories__item--quadracopters {
+  position: relative;
+  margin-bottom: 180px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 33px;
+
+    background-color: #f7e296;
+    background-image: url("../../img/quadracopters.svg");
+    background-repeat: no-repeat;
+    background-position: center 55%;
   }
 }
