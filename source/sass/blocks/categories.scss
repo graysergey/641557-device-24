@@ -1,6 +1,6 @@
 .categories {
   width: 1160px;
-  margin: 0 auto;
+  margin: 0 auto 180px auto;
 }
 
 .categories__list {
@@ -11,8 +11,21 @@
   list-style: none;
 }
 
-.categories__item {
+.categories__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 160px;
+  background-color: rgba(240, 197, 46, 0.5);
 
+  &--selfie {
+    align-items: flex-end;
+    padding-bottom: 5px;
+  }
+}
+
+.categories__item {
   & a {
     display: inline-block;
     width: 160px;
@@ -26,110 +39,110 @@
   }
 }
 
-.categories__item--virtual {
-  position: relative;
-  margin-bottom: 180px;
-
-  &::before {
-    content: "";
-    display: block;
-    width: 160px;
-    height: 160px;
-    margin-bottom: 33px;
-
-    background-color: #f7e296;
-    background-image: url("../img/virtual-reality.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+.categories__title {
+  margin: 35px 0 0 0;
+  font-size: 18px;
 }
 
-.categories__item--monopods {
-  position: relative;
-  margin-bottom: 180px;
+// .categories__item--virtual {
+// background-color: rgba(240, 197, 46, 0.5);
+//   position: relative;
 
-  &::before {
-    content: "";
-    display: block;
-    width: 160px;
-    height: 160px;
-    margin-bottom: 33px;
+//   &::before {
+//     content: "";
+//     display: block;
+//     width: 160px;
+//     height: 160px;
+//     margin-bottom: 33px;
 
-    background-color: #f7e296;
-    background-image: url("../img/monopods-for-selfie.svg");
-    background-repeat: no-repeat;
-    background-position: center 95%;
-  }
-}
+//     background-color: #f7e296;
+//     background-image: url("../img/virtual-reality.svg");
+//     background-repeat: no-repeat;
+//     background-position: center;
+//   }
+// }
 
-.categories__item--cameras {
-  position: relative;
-  margin-bottom: 180px;
+// .categories__item--monopods {
+//   position: relative;
 
-  &::before {
-    content: "";
-    display: block;
-    width: 160px;
-    height: 160px;
-    margin-bottom: 33px;
+//   &::before {
+//     content: "";
+//     display: block;
+//     width: 160px;
+//     height: 160px;
+//     margin-bottom: 33px;
 
-    background-color: #f7e296;
-    background-image: url("../img/action-cameras.svg");
-    background-repeat: no-repeat;
-    background-position: 54%;
-  }
-}
+//     background-color: #f7e296;
+//     background-image: url("../img/monopods-for-selfie.svg");
+//     background-repeat: no-repeat;
+//     background-position: center 95%;
+//   }
+// }
 
-.categories__item--braslets {
-  position: relative;
-  margin-bottom: 180px;
+// .categories__item--cameras {
+//   position: relative;
 
-  &::before {
-    content: "";
-    display: block;
-    width: 160px;
-    height: 160px;
-    margin-bottom: 33px;
+//   &::before {
+//     content: "";
+//     display: block;
+//     width: 160px;
+//     height: 160px;
+//     margin-bottom: 33px;
 
-    background-color: #f7e296;
-    background-image: url("../img/fitness-braslet.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
+//     background-color: #f7e296;
+//     background-image: url("../img/action-cameras.svg");
+//     background-repeat: no-repeat;
+//     background-position: 54%;
+//   }
+// }
 
-.categories__item--watch {
-  position: relative;
-  margin-bottom: 180px;
+// .categories__item--braslets {
+//   position: relative;
 
-  &::before {
-    content: "";
-    display: block;
-    width: 160px;
-    height: 160px;
-    margin-bottom: 33px;
+//   &::before {
+//     content: "";
+//     display: block;
+//     width: 160px;
+//     height: 160px;
+//     margin-bottom: 33px;
 
-    background-color: #f7e296;
-    background-image: url("../img/smart-watch.svg");
-    background-repeat: no-repeat;
-    background-position: 54%;
-  }
-}
+//     background-color: #f7e296;
+//     background-image: url("../img/fitness-braslet.svg");
+//     background-repeat: no-repeat;
+//     background-position: center;
+//   }
+// }
 
-.categories__item--quadracopters {
-  position: relative;
-  margin-bottom: 180px;
+// .categories__item--watch {
+//   position: relative;
 
-  &::before {
-    content: "";
-    display: block;
-    width: 160px;
-    height: 160px;
-    margin-bottom: 33px;
+//   &::before {
+//     content: "";
+//     display: block;
+//     width: 160px;
+//     height: 160px;
+//     margin-bottom: 33px;
 
-    background-color: #f7e296;
-    background-image: url("../../img/quadracopters.svg");
-    background-repeat: no-repeat;
-    background-position: center 55%;
-  }
-}
+//     background-color: #f7e296;
+//     background-image: url("../img/smart-watch.svg");
+//     background-repeat: no-repeat;
+//     background-position: 54%;
+//   }
+// }
+
+// .categories__item--quadracopters {
+//   position: relative;
+
+//   &::before {
+//     content: "";
+//     display: block;
+//     width: 160px;
+//     height: 160px;
+//     margin-bottom: 33px;
+
+//     background-color: #f7e296;
+//     background-image: url("../../img/quadracopters.svg");
+//     background-repeat: no-repeat;
+//     background-position: center 55%;
+//   }
+// }
