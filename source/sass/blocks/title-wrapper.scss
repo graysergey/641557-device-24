@@ -23,6 +23,7 @@
   list-style: none;
 
   & li {
+    position: relative;
     margin-right: 39px;
 
     font-family: "open_sanslight", "Arial", sans-serif;
@@ -30,6 +31,16 @@
     line-height: 24px;
     color: rgba(0, 0, 0, 0.3);
     background-color: #ffffff;
+
+    &:not(:last-of-type)::after {
+      position: absolute;
+      top: 9px;
+      right: -20px;
+      width: 4px;
+      height: 7px;
+      content: "";
+      background: url("../img/nav-arrow.svg");
+    }
   }
 
   & a {
@@ -39,5 +50,13 @@
     color: rgba(0, 0, 0, 0.3);
 
     background-color: #ffffff;
+  }
+
+  & a[href]:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  & a[href]:active {
+    color: rgba(0, 0, 0, 0.1);
   }
 }
