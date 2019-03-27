@@ -22,14 +22,12 @@
   margin: 0;
   padding: 0;
   margin-top: -20px;
-  padding-right: 125px;
-  padding-top: 10px;
 
   list-style: none;
 
   &::after {
     position: absolute;
-    right: 1px;
+    right: 0;
     top: -79px;
     content: "";
     width: 7px;
@@ -38,14 +36,24 @@
   }
 }
 
+.servises__label {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
 .servises__item {
   position: relative;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 
-  & a {
+  & .servises__btn {
+    position: relative;
     display: inline-block;
-    padding-left: 4px;
+    width: 160px;
+    padding: 8px 0;
+    margin-right: 125px;
+
 
     font-family: "gilroyextrabold", "Aria", sans-serif;
     font-size: 18px;
@@ -54,24 +62,45 @@
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1mm;
+    cursor: pointer;
+
+    &:active {
+      width: 100%;
+      padding-right: 125px;
+      color: #f7e184;
+      background: #282828;
+    }
   }
 
   &--current {
-    & a {
-      position: relative;
+    & .servises__btn {
       color: #f7e184;
+      background: transparent;
+
+      &:hover {
+        background: transparent;
+      }
     }
 
-    &::before {
-      position: absolute;
-      left: 0;
-      top: -9px;
-      content: "";
-      width: 278px;
-      height: 40px;
+    & .servises__label {
       background-color: #282828;
     }
+    // &::before {
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 100%;
+    //   content: "";
+    //   background-color: #282828;
+    // }
   }
+
+  // &:active::before {
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   content: "";
+  //   background-color: #282828;
+  // }
 }
 
 .servises__wrapper {
