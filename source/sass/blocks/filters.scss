@@ -35,6 +35,24 @@
   }
 }
 
+.filters__sub-title {
+  font-family: "gilroyextrabold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+
+  &--level {
+    margin-bottom: 34px;
+  }
+
+  &--color {
+    margin-bottom: 17px;
+  }
+
+  &--Bluetooth {
+    margin-bottom: 17px;
+  }
+}
+
 .filters__price-level {
   width: 200px;
   height: 132px;
@@ -56,6 +74,7 @@
   width: 130px;
   height: 2px;
   margin-left: -5px;
+  margin-bottom: 10px;
   background-color: #91c92f;
 }
 
@@ -69,6 +88,7 @@
   border-radius: 20px;
   background-color: #ffffff;
   box-shadow: 0 2px 0 0 #dadada;
+  cursor: pointer;
 
   &::after {
     content: "";
@@ -88,24 +108,18 @@
   right: 0;
 }
 
-.filters__sub-title {
-  // padding: 20px 0;
-  font-family: "gilroyextrabold", "Arial", sans-serif;
-  font-size: 18px;
+.filter__cost-min,
+.filter__cost-max {
+  font-size: 14px;
   line-height: 24px;
 
-  &--level {
-    margin-bottom: 34px;
-  }
-
-  &--color {
-    margin-bottom: 17px;
-  }
-
-  &--Bluetooth {
-    margin-bottom: 17px;
-  }
+  color: rgba(0, 0, 0, 0.2);
 }
+
+.filter__cost-min {
+  margin-right: 60px;
+}
+
 
 .filters__sorting-color {
   display: flex;
@@ -115,16 +129,42 @@
   margin-bottom: 44px;
 
   border: none;
+}
 
-  & input {
-    display: none;
+.filters__color-label {
+  position: relative;
+  padding-left: 37px;
+
+  font-size: 14px;
+  line-height: 40px;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: 8px;
+    left: -2px;
+    width: 27px;
+    height: 23px;
+    content: "";
+
+    background: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
   }
+}
 
-  & label {
-    margin-left: 37px;
+.filters__color-input:checked + .filters__color-label::before {
+  background: url("../img/checkbox-on.svg");
+}
 
-    font-size: 14px;
-    line-height: 40px;
+.filters__color-label:hover::before {
+  opacity: 0.6;
+}
+
+.filters__color-input:disabled + .filters__color-label {
+  opacity: 0.25;
+
+  &:hover::before {
+    opacity: 1;
   }
 }
 
@@ -133,27 +173,52 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
-  margin-bottom: 39px;
+  margin-bottom: 31px;
 
   border: none;
+}
 
-  & input {
-    display: none;
+.filters__bluetooth-label {
+  position: relative;
+  padding-left: 37px;
+
+  font-size: 14px;
+  line-height: 40px;
+
+  &::before {
+    position: absolute;
+    top: 6px;
+    left: -3px;
+    width: 25px;
+    height: 25px;
+
+    content: "";
+    background-image: url("../img/radio-off.svg");
   }
+}
 
-  & label {
-    margin-left: 37px;
+.filters__bluetooth-input:checked + .filters__bluetooth-label::before {
+  background-image: url("../img/radio-on.svg");
+}
 
-    font-size: 14px;
-    line-height: 40px;
+.filters__bluetooth-label:hover::before {
+  opacity: 0.6;
+}
+
+.filters__bluetooth-input:disabled + .filters__bluetooth-label {
+  opacity: 0.25;
+
+  &::before {
+    opacity: 1;
   }
 }
 
 .filters__btn {
-  padding: 0;
-  margin-left: 39px;
+  width: 200px;
+  padding: 8px 0;
 
   font-family: "gilroyextrabold", "Arial", sans-serif;
+  text-align: center;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
