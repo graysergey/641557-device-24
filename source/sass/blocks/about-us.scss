@@ -1,4 +1,5 @@
 .about-us {
+  position: relative;
   padding-right: 135px;
 
   & p {
@@ -17,6 +18,15 @@
   & p:last-of-type {
     margin-bottom: 67px;
     letter-spacing: -0.04mm;
+  }
+
+  &::before {
+    position: absolute;
+    top: -55px;
+    width: 80px;
+    height: 7px;
+    content: "";
+    background-color: #000000;
   }
 }
 
@@ -44,7 +54,8 @@
 
 .about-us__btn {
   display: block;
-  margin-left: 23px;
+  width: 260px;
+  padding-left: 23px;
 
   font-family: "gilroyextrabold", "Arial", sans-serif;
   font-size: 18px;

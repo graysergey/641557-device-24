@@ -1,5 +1,5 @@
 .contacts {
-  // padding-right: 135px;
+  position: relative;
 
   & p {
     margin: 0;
@@ -9,6 +9,15 @@
     font-size: 15px;
     line-height: 30px;
     letter-spacing: 0.03mm;
+  }
+
+  &::before {
+    position: absolute;
+    top: -55px;
+    width: 80px;
+    height: 7px;
+    content: "";
+    background-color: #000000;
   }
 }
 
@@ -30,7 +39,8 @@
 
 .contacts__btn {
   display: block;
-  margin-left: 40px;
+  width: 260px;
+  padding-left: 40px;
 
   font-family: "gilroyextrabold", "Arial", sans-serif;
   font-size: 18px;

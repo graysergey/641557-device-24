@@ -32,3 +32,15 @@ a {
 a[href] {
   cursor: pointer;
 }
+
+.btn {
+  background: linear-gradient(to bottom, transparent 33%, #f0c52e 33%, #f0c52e 66%, transparent 66%);
+}
+
+.btn:hover {
+  background: linear-gradient(to bottom, #f0c52e, #f0c52e);
+}
+
+.btn:active {
+  color: rgba(0, 0, 0, 0.3);
+}

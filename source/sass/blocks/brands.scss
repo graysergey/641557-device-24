@@ -13,3 +13,15 @@
 
   list-style: none;
 }
+
+.brands__item {
+  & img {
+    filter: grayscale(100%);
+    opacity: 0.2;
+  }
+
+  & a:hover img {
+    filter: grayscale(0);
+    opacity: 1;
+  }
+}
