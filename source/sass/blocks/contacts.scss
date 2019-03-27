@@ -34,15 +34,16 @@
 
 .contacts__map {
   display: block;
-  margin-bottom: 77px;
+  margin-bottom: 69px;
 }
 
 .contacts__btn {
-  display: block;
+  display: inline-block;
   width: 260px;
-  padding-left: 40px;
+  padding: 8px 0;
 
   font-family: "gilroyextrabold", "Arial", sans-serif;
+  text-align: center;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
