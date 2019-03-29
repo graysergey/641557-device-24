@@ -146,7 +146,7 @@
                   <span class="catalog__price-item">2 500 руб.</span>
                 </div>
               </li>
-              <li class="catalog__item">
+              <li class="catalog__item catalog__item--new">
                 <div class="catalog__img-container">
                   <img src="img/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                   <a class="catalog__hover-btn catalog__item-hidden btn" href="basket.html">В корзину</a>      <!-- при наведении -->
@@ -158,18 +158,20 @@
                 </div>
               </li>
             </ul>
+
             <div class="pagination">
-              <a class="pagination__another-page" aria-label="Перейти назад">Назад</a>
+              <a class="pagination__another-page pagination__another-page--before" aria-label="Перейти назад">Назад</a>
               <ul class="pagination__list">
-                <li class="pagination__item pagination__btn-current"><a>1</a></li>
-                <li class="pagination__item pagination__btn"><a href="#">2</a></li>
-                <li class="pagination__item pagination__btn"><a href="#">3</a></li>
+                <li class="pagination__item pagination__item--current"><a>1</a></li>
+                <li class="pagination__item"><a href="#">2</a></li>
+                <li class="pagination__item"><a href="#">3</a></li>
               </ul>
-              <a class="pagination__another-page" href="next.html" aria-label="Перейти вперед">Вперед</a>
+              <a class="pagination__another-page pagination__another-page--after" href="next.html" aria-label="Перейти вперед">Вперед</a>
             </div>
-          </section> <!--<div class="catalog-container__right">-->
-        </div> <!--<div class="catalog-container__positioner">-->
-      </div> <!--<div class="catalog-container">-->
+
+          </section>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
