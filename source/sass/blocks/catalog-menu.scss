@@ -58,3 +58,10 @@
 .catalog-menu--positioner {
   margin-top: 10px;
 }
+
+.catalog-menu__working-link {
+  & a {
+    font-family: "gilroyextrabold", "Aria", sans-serif;
+    background: linear-gradient(to right, #f5c518, transparent);
+  }
+}
