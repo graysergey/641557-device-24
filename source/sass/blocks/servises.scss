@@ -71,40 +71,28 @@
       background: #282828;
     }
   }
+}
 
-  &--current {
-    & .servises__btn {
-      color: #f7e184;
+.servises__item-1:checked ~ .servises__container .servises__item--delivery,
+.servises__item-2:checked ~ .servises__container .servises__item--warranty,
+.servises__item-3:checked ~ .servises__container .servises__item--credit {
+  & .servises__btn {
+    color: #f7e184;
+    background: transparent;
+
+    &:hover {
       background: transparent;
-
-      &:hover {
-        background: transparent;
-      }
     }
-
-    & .servises__label {
-      background-color: #282828;
-    }
-    // &::before {
-    //   position: absolute;
-    //   width: 100%;
-    //   height: 100%;
-    //   content: "";
-    //   background-color: #282828;
-    // }
   }
 
-  // &:active::before {
-  //   position: absolute;
-  //   width: 100%;
-  //   height: 100%;
-  //   content: "";
-  //   background-color: #282828;
-  // }
+  & .servises__label {
+    background-color: #282828;
+  }
 }
 
 .servises__wrapper {
   position: relative;
+  display: none;
   padding-left: 115px;
   padding-right: 320px;
 
@@ -122,8 +110,6 @@
   }
 
   &--guarantee {
-    display: none;
-
     &::after {
       position: absolute;
       right: 45px;
@@ -137,8 +123,6 @@
   }
 
   &--credit {
-    display: none;
-
     &::after {
       position: absolute;
       right: 70px;
@@ -150,6 +134,12 @@
       background-repeat: no-repeat;
     }
   }
+}
+
+.servises__item-1:checked ~ .servises__container .servises__wrapper--delivery,
+.servises__item-2:checked ~ .servises__container .servises__wrapper--guarantee,
+.servises__item-3:checked ~ .servises__container .servises__wrapper--credit {
+  display: block;
 }
 
 .servises__like-h1 {

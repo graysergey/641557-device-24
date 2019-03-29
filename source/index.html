@@ -187,17 +187,21 @@
 
       <section class="servises">
         <h2 class="visually-hidden">Информация о наших сервисах</h2>
-        <div class="servises__container">
 
+        <input class="visually-hidden servises__item-1" id="servises-1" type="radio" name="servises-item" checked>
+        <input class="visually-hidden servises__item-2" id="servises-2" type="radio" name="servises-item">
+        <input class="visually-hidden servises__item-3" id="servises-3" type="radio" name="servises-item">
+
+        <div class="servises__container">
           <ul class="servises__list">
-            <li class="servises__item servises--delivery servises__item--current">
-              <label class="servises__label"><a class="servises__btn btn">Доставка</a></label>
+            <li class="servises__item servises__item--delivery servises__item--current">
+              <label class="servises__label" for="servises-1"><a class="servises__btn btn">Доставка</a></label>
             </li>
             <li class="servises__item servises__item--warranty">
-              <label class="servises__label"><a class="servises__btn btn">Гарантия</a></label>
+              <label class="servises__label" for="servises-2"><a class="servises__btn btn">Гарантия</a></label>
             </li>
             <li class="servises__item servises__item--credit">
-              <label class="servises__label"><a class="servises__btn btn">Кредит</a></label>
+              <label class="servises__label" for="servises-3"><a class="servises__btn btn">Кредит</a></label>
             </li>
           </ul>
 
