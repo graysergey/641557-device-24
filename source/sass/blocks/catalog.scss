@@ -17,9 +17,28 @@
   position: relative;
   width: 360px;
   margin-top: 45px;
+}
 
-  &::after {
+.catalog__new-item {
+  &::before {
     position: absolute;
+    top: 29px;
+    right: 27px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+
+    content: "NEW";
+    font-family: "gilroyextrabold", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.1);
+
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
   }
 }
 
@@ -36,7 +55,7 @@
   }
 
   &:hover {
-    &::before {
+    &::after {
       position: absolute;
       content: "";
       width: 100%;
