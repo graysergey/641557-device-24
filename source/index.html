@@ -48,11 +48,15 @@
       <h1 class="visually-hidden">Большой выбор гаджетов в нашем магазине</h1>
 
       <div class="offer">
-        <div class="offer__box-slider">
-          <button class="offer__btn-slider" type="button">Первый слайд</button>
-          <button class="offer__btn-slider" type="button">Второй слайд</button>
-          <button class="offer__btn-slider" type="button">Третий  слайд</button>
-        </div>
+        <input class="visually-hidden offer__product-1" id="product-1" type="radio" name="offer-toggle" checked>
+        <input class="visually-hidden offer__product-2" id="product-2" type="radio" name="offer-toggle">
+        <input class="visually-hidden offer__product-3" id="product-3" type="radio" name="offer-toggle">
+
+        <ol class="offer__box-slider">
+          <li><label class="offer__btn-slider" for="product-1">Первый слайд</label></li>
+          <li><label class="offer__btn-slider" for="product-2">Второй слайд</label></li>
+          <li><label class="offer__btn-slider" for="product-3">Третий  слайд</label></li>
+        </ol>
 
         <ol class="offer__list">
           <li class="offer__item">
@@ -84,7 +88,7 @@
             <div class="offer__container">
               <p class="offer__title">Худеем <br> правильно!</p>
               <p class="offer__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не&nbsp;пропускать занятия и соблюдать диету.</p>
-              <a class="offer_more btn" href="smart-watch.html">Подробнее</a>
+              <a class="offer__more btn" href="smart-watch.html">Подробнее</a>
               <table class="offer__table">
                 <caption class="visually-hidden">Информация о фитнес браслетах</caption>
                 <tr>
@@ -102,7 +106,7 @@
             <div class="offer__container">
               <p class="offer__title">Порхает как бабочка, жалит как пчела!</p>
               <p class="offer__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным&nbsp;лазером, замаскированным под стандартную камеру.</p>
-              <a class="offer_more btn" href="quadracopters.html">Подробнее</a>
+              <a class="offer__more btn" href="quadracopters.html">Подробнее</a>
               <table class="offer__table">
                 <caption class="visually-hidden">Информация о квадракоптере</caption>
                 <tr>
