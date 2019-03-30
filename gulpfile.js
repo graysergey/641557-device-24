@@ -16,6 +16,7 @@ var include = require("posthtml-include"); // плагин для posthtml, по
 var htmlmin = require("gulp-htmlmin"); // минификатор HTML
 var uglify = require('gulp-uglify'); // минификатор JS
 var pump = require('pump'); // передает ошибки в консоль в нормальном виде
+var babel = require('gulp-babel'); // конвертирует JavaScript es6  в es5
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -41,6 +42,7 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.scss", gulp.series("css"));
+  gulp.watch("source/js/**/*.js", gulp.series("compressjs"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html").on("change", gulp.series("html_clean", "html", "refresh"));
   gulp.watch("source/img/**/*", gulp.series("clean_image", "copy_image", "sprite", "html", "refresh"));
@@ -116,13 +118,34 @@ gulp.task("copy_image", function () {
 });
 
 gulp.task("compressjs", function (cb) {
+    gulp.src("source/js/main.js")
+      .pipe(plumber());
   pump([
       gulp.src("source/js/*.js"),
+      gulp.dest("build/js"),
+      babel({
+        presets: ['@babel/env']
+      }),
+      rename("main.min.js"),
       uglify(),
       gulp.dest("build/js")
     ],
     cb
   );
+});
+
+gulp.task("css", function () {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(gulp.dest("build/css"))
+    .pipe(csso())
+    .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
 });
 
 gulp.task("build", gulp.series(
