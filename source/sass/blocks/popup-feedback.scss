@@ -4,6 +4,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
+  display: none;
   width: 960px;
   min-height: 553px;
   background-color: #ffffff;
@@ -12,7 +13,7 @@
   z-index: 100;
 
   &--show {
-    display: none;
+    display: flex;
   }
 }
 

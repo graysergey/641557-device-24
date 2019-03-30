@@ -35,6 +35,10 @@
 .contacts__map {
   display: block;
   margin-bottom: 69px;
+
+  & img {
+    display: block;
+  }
 }
 
 .contacts__btn {

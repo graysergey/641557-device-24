@@ -4,7 +4,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  display: block;
+  display: none;
   width: 960px;
   min-height: 559px;
 
@@ -16,7 +16,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    display: block;
+    display: none;
     width: 960px;
     height: 559px;
     border: 0;
@@ -24,7 +24,11 @@
   }
 
   &--show {
-    display: none;
+    display: block;
+
+    & iframe {
+      display: block;
+    }
   }
 }
 
