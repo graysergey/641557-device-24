@@ -41,6 +41,10 @@ a[href] {
   background: linear-gradient(to bottom, #f0c52e, #f0c52e);
 }
 
+.btn:focus {
+  background: linear-gradient(to bottom, #f0c52e, #f0c52e);
+}
+
 .btn:active {
   color: rgba(0, 0, 0, 0.3);
 }

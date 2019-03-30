@@ -289,17 +289,23 @@
       </div>
     </footer>
 
-    <section class="popup-feedback">
+    <section class="popup-feedback popup-feedback--show">
       <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form action="https://echo.htmlacademy.ru" method="POST">
-        <label for="feedback-name">Ваше имя:</label>
-        <input class="popup-feedback__input-name" type="text" name="name" id="feedback-name" placeholder="Имя Фамилия" aria-label="Введите ваше имя">
+      <form class="popup-feedback__form" action="https://echo.htmlacademy.ru" method="POST">
+        <p class="popup-feedback__paragraph">
+          <label for="feedback-name">Ваше имя:</label>
+          <input class="popup-feedback__input-name" type="text" name="name" id="feedback-name" placeholder="Имя Фамилия" aria-label="Введите ваше имя">
+        </p>
 
-        <label for="feedback-email">Ваше имя:</label>
-        <input class="popup-feedback__input-email" type="email" name="email" id="feedback-email" placeholder="email@example.com" aria-label="Введите вашу почту" required>
+        <p class="popup-feedback__paragraph">
+          <label for="feedback-email">Ваш e-mail:</label>
+          <input class="popup-feedback__input-email" type="email" name="feedback-email" id="feedback-email" placeholder="email@example.com" aria-label="Введите вашу почту">
+        </p>
 
-        <label for="feedback-text">Текст письма:</label>
-        <input class="popup-feedback__input-text" type="textarea" name="text" id="feedback-text" placeholder="В свободной форме" aria-label="Введите текст вашего сообщение">
+        <p class="popup-feedback__paragraph">
+          <label for="feedback-text">Текст письма:</label>
+          <textarea class="popup-feedback__textarea" name="feedback-text" id="feedback-text" placeholder="В свободной форме" aria-label="Введите текст вашего сообщение"></textarea>
+        </p>
 
         <button class="popup-feedback__btn-send btn" type="submit">Отправить</button>
         <button class="popup-feedback__btn-close" type="button">Закрыть</button>
