@@ -1,3 +1,69 @@
 .popup-map {
-  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: block;
+  width: 960px;
+  min-height: 559px;
+
+  background: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+
+  & iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 960px;
+    height: 559px;
+    border: 0;
+    z-index: 110;
+  }
+
+  &--show {
+    display: none;
+  }
+}
+
+.popup-map__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+
+  & img {
+    display: block;
+  }
+}
+
+.popup-map__close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+
+  width: 56px;
+  height: 56px;
+
+  font-size: 0;
+  background-image: url("../img/modal-close.svg");
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: none;
+  opacity: 0.5;
+  z-index: 120;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
