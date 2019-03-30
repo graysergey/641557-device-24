@@ -12,6 +12,9 @@
 
   z-index: 100;
 
+  animation-name: falling-out-up;
+  animation-duration: 0.7s;
+
   &--show {
     display: flex;
   }
@@ -115,5 +118,32 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+
+@keyframes falling-out-up {
+  from {
+    transform: translate(-50%, 2000px);
+  }
+
+  30% {
+    transform: translate(-50%, -51.5%);
+  }
+
+  50% {
+    transform: translate(-50%, -48.5%);
+  }
+
+  70% {
+    transform: translate(-50%, -50.5%);
+  }
+
+  90% {
+    transform: translate(-50%, -49.5%);
+  }
+
+  to {
+    transform: translate(-50%, -50%);
   }
 }

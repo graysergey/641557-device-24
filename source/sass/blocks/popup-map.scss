@@ -12,6 +12,9 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   z-index: 100;
 
+  animation-name: falling-out-right;
+  animation-duration: 0.5s;
+
   & iframe {
     position: absolute;
     top: 0;
@@ -69,5 +72,31 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@keyframes falling-out-right {
+  from {
+    transform: translate(2000px, -50%);
+  }
+
+  20% {
+    transform: translate(-52%), -50%;
+  }
+
+  40% {
+    transform: translate(-48%, -50%);
+  }
+
+  60% {
+    transform: translate(-51%, -50%);
+  }
+
+  80% {
+    transform: translate(-49%, -50%);
+  }
+
+  to {
+    transform: translate(-50%, -50%);
   }
 }
