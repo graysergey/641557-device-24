@@ -15,13 +15,31 @@
 }
 
 .brands__item {
-  & img {
-    filter: grayscale(100%);
-    opacity: 0.2;
+  & a {
+    display: block;
   }
+}
 
-  & a:hover img {
-    filter: grayscale(0);
-    opacity: 1;
+.brands__dji {
+  &:hover {
+    background: url("../img/dji-logo-hover.jpg");
+  }
+}
+
+.brands__sp {
+  &:hover {
+    background: url("../img/sp-gatgets-logo-hover.jpg");
+  }
+}
+
+.brands__go-pro {
+  &:hover {
+    background: url("../img/go-pro-logo-hover.jpg");
+  }
+}
+
+.brands__vive {
+  &:hover {
+    background: url("../img/vive-logo-hover.jpg");
   }
 }
