@@ -6,15 +6,67 @@ const ESCAPE = 27;
 const feedbackLink = document.querySelector('.contacts__btn');
 const feedbackPopup = document.querySelector('.popup-feedback');
 const feedbackForm = feedbackPopup.querySelector('.popup-feedback__form');
-const feedbackFormName = feedbackPopup.querySelector('[name=feedback-name]');
-const feedbackFormEmail = feedbackPopup.querySelector('[name=feedback-email]');
+const feedbackName = feedbackPopup.querySelector('.popup-feedback__input-name');
+const feedbackEmail = feedbackPopup.querySelector('.popup-feedback__input-email');
+const feedbackMassage = feedbackPopup.querySelector('.popup-feedback__textarea');
 const feedbackCloseButton = feedbackPopup.querySelector('.popup-feedback__btn-close');
+
+let storageName = '';
+let storageEmail = '';
+let storageMassage = '';
+
+const checkLocalStorage = () => {
+  try {
+    storageName = localStorage.getItem('login');
+  } catch (err) {
+    storageName = false;
+  }
+
+  try {
+    storageEmail = localStorage.getItem('email');
+  } catch (err) {
+    storageEmail = false;
+  }
+
+  try {
+    storageMassage = localStorage.getItem('massage');
+  } catch (err) {
+    storageMassage = false;
+  }
+}
 
 const onButtonFeedbackOpen = (evt) => {
   if (evt.keyCode === ENTER || evt.type === 'click') {
     evt.preventDefault();
     feedbackPopup.classList.add('popup-feedback--show');
-    feedbackFormName.focus();
+    checkLocalStorage();
+
+    if (storageName) {
+      feedbackName.value = storageName;
+      feedbackEmail.focus();
+    } else {
+      feedbackName.focus();
+    }
+
+    if (storageEmail) {
+      feedbackEmail.value = storageEmail;
+      if (feedbackEmail.value.length >= 5 && feedbackEmail.value.search('@') !== -1 && feedbackEmail.value.indexOf('.') !== -1) { // проверяет наличие @ и точки в input type="email" (минимальная валидность, для установки фокуса)
+        if (!feedbackName.value) {
+          feedbackName.focus();
+        } else {
+          feedbackMassage.focus();
+        }
+      }
+    } else if (!feedbackName.value) {
+      feedbackName.focus();
+    } else {
+      feedbackEmail.focus();
+    }
+
+    if (storageMassage) {
+      feedbackMassage.value = storageMassage;
+    }
+
     setFeedbackPopupListeners();
   }
 }
@@ -22,22 +74,63 @@ const onButtonFeedbackOpen = (evt) => {
 const onButtonClose = (evt) => {
   if (evt.keyCode === ESCAPE || evt.type === 'click') {
     evt.preventDefault();
+
     if (feedbackPopup.classList.contains('popup-feedback--show')) {
-      console.log('глобальное событие');
       feedbackPopup.classList.remove('popup-feedback--show');
       feedbackCloseButton.removeEventListener('click', onButtonClose);
       window.removeEventListener('keydown', onButtonClose);
-      if (feedbackPopup.classList.contains('popup-feedback__error')) {
-        feedbackPopup.classList.remove('popup-feedback__error');
-      }
+    }
+
+    if (feedbackName.value.length >= 2) { // Минимальное количество символов в поле логина
+      localStorage.setItem('login', feedbackName.value);
+    } else {
+      localStorage.removeItem('login');
+      feedbackName.value = '';
+    }
+
+    if (feedbackEmail.value) {
+      localStorage.setItem('email', feedbackEmail.value);
+    }
+
+    if (feedbackMassage.value) {
+      localStorage.setItem('massage', feedbackMassage.value);
     }
   }
 }
 
 const onButtonSubmit = (evt) => {
-  if (!feedbackFormName.value || !feedbackFormEmail.value) {
+  if (!feedbackName.value) {
     evt.preventDefault();
-    feedbackPopup.classList.add('popup-feedback__error');
+    feedbackName.classList.add('popup-feedback__error');
+    setTimeout(() => {
+      feedbackName.classList.remove('popup-feedback__error')
+    }, 1000);
+  } else if (feedbackName.value.length >= 2) {
+    localStorage.setItem('login', feedbackName.value);
+  } else if (feedbackName.value.length < 2) {
+    localStorage.removeItem('login');
+    feedbackName.value = '';
+  }
+
+  if (!feedbackEmail.value) {
+    console.log('типа нету имени ', feedbackEmail.value)
+    evt.preventDefault();
+    feedbackEmail.classList.add('popup-feedback__error');
+    setTimeout(() => {
+      feedbackEmail.classList.remove('popup-feedback__error')
+    }, 1000);
+  }  else {
+    localStorage.setItem('email', feedbackEmail.value);
+  }
+
+  if (!feedbackMassage.value) {
+    evt.preventDefault();
+    feedbackMassage.classList.add('popup-feedback__error');
+    setTimeout(() => {
+      feedbackMassage.classList.remove('popup-feedback__error')
+    }, 1000);
+  }  else {
+    localStorage.setItem('massage', feedbackMassage.value);
   }
 }
 
@@ -62,14 +155,18 @@ const onLinkMap = (evt) => {
     evt.preventDefault();
     mapPopup.classList.add('popup-map--show');
     mapCloseButton.addEventListener('click', onButtonCloseMap);
+    window.addEventListener('keydown', onButtonCloseMap);
   }
 }
 
 const onButtonCloseMap = (evt) => {
-  evt.preventDefault();
-  mapPopup.classList.remove('popup-map--show');
-  mapCloseButton.removeEventListener('click', onButtonCloseMap);
+  if (evt.keyCode === ESCAPE || evt.type === 'click') {
+    evt.preventDefault();
+    mapPopup.classList.remove('popup-map--show');
+    mapCloseButton.removeEventListener('click', onButtonCloseMap);
+    window.removeEventListener('click', onButtonCloseMap);
+  }
 }
 
 mapLink.addEventListener('click', onLinkMap);
-// mapLink.addEventListener('keydown', onLinkMap);
+mapLink.addEventListener('keydown', onLinkMap);
