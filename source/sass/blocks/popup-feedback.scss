@@ -155,7 +155,7 @@
 @keyframes shake-x {
   from,
   to {
-    transform: translate(-50%, -50%);
+    transform: translateX(0);
   }
 
   10%,
@@ -163,13 +163,15 @@
   50%,
   70%,
   90% {
-    transform: translate(-49%, -50%);
+    transform: translateX(-10px);
+    background-color: rgba(255, 137, 101, 0.447);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translate(-51%, -50%);
+    transform: translateX(10px);
+    background-color: rgba(255, 137, 101, 0.447);
   }
 }
