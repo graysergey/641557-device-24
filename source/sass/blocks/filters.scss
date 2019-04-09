@@ -21,16 +21,17 @@
   width: 200px;
   padding-top: 82px;
 
-  & fieldset {
+  & legend {
     position: relative;
   }
 
-  & fieldset::before {
+  & legend::before {
     content: "";
     position: absolute;
     top: -13px;
-    width: 100%;
+    width: 200px;
     height: 2px;
+
     background-color: #000000;
   }
 }
@@ -135,15 +136,16 @@
   }
 }
 
-.filter__cost-min,
-.filter__cost-max {
+.filters__cost-min,
+.filters__cost-max {
   font-size: 14px;
   line-height: 24px;
+  font-weight: 300;
 
   color: rgba(0, 0, 0, 0.2);
 }
 
-.filter__cost-min {
+.filters__cost-min {
   margin-right: 60px;
 }
 
