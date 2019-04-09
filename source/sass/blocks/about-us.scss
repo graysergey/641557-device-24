@@ -42,7 +42,6 @@
 .about-us__list-info {
   margin: 0;
   padding: 0;
-  margin-left: 37px;
   margin-bottom: 53px;
 
   font-family: "gilroyextrabold", "Arial", sans-serif;
@@ -50,6 +49,19 @@
   line-height: 40px;
   list-style: none;
   letter-spacing: 0.2mm;
+}
+
+.about-us__item {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 27px 0 0;
+
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+  }
 }
 
 .about-us__btn {

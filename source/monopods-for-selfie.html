@@ -13,7 +13,7 @@
 
     <header class="header header--catalog-page">
       <nav class="header__navigation">
-        <a class="header__logo" href="index.html"><svg width="163" height="35" alt="Логотип компании"><use xlink:href="#logo"></use></svg></a>
+        <a class="header__logo" href="index.html" aria-label="Логотип компании"><svg width="163" height="35"><use xlink:href="#logo"></use></svg></a>
         <div class="header__top-container">
           <form class="header__form" action="https://echo.htmlacademy.ru" method="GET">
             <input class="header__search" type="search" placeholder="Поиск по сайту">
@@ -46,9 +46,9 @@
     </header>
 
     <main>
-      <div class="title-wrapper">
-        <h1 class="title-wrapper__title">Моноподы для селфи</h1>
-        <ul class="title-wrapper__bread-crumbs">
+      <div class="bread-crumbs">
+        <h1 class="bread-crumbs__title">Моноподы для селфи</h1>
+        <ul class="bread-crumbs__wripper">
           <li><a href="index.html">Главная</a></li>
           <li><a href="catalog.html">Каталог товаров</a></li>
           <li><a>Моноподы для селфи</a></li>
@@ -68,8 +68,8 @@
                         <div class="filters__toggle filters__toggle--min"></div>
                         <div class="filters__toggle filters__toggle--max"></div>
                     </div>
-                    <span class="filter__cost-min">от 0</span>
-                    <span class="filter__cost-max">до 5000</span>
+                    <span class="filters__cost-min">от 0</span>
+                    <span class="filters__cost-max">до 5000</span>
                   </div>
               </fieldset>
 
@@ -107,8 +107,8 @@
                 <li><a class="sorting__btn" href="by-popularity.html">По популярности</a></li>
               </ul>
               <div class="sorting__container-btn">
-                <button class="sorting__arrow sorting__arrow--up" type="button"></button>
-                <button class="sorting__arrow sorting__arrow--down sorting__arrow--active" type="button"></button>
+                <button class="sorting__arrow sorting__arrow--up" type="button">Сортировать по возрастанию</button>
+                <button class="sorting__arrow sorting__arrow--down sorting__arrow--active" type="button">Сортировать по убыванию</button>
               </div>
             </div>
 

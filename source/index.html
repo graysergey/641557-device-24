@@ -13,7 +13,7 @@
 
     <header class="header">
       <nav class="header__navigation">
-        <a class="header__logo"><svg width="163" height="35" alt="Логотип компании"><use xlink:href="#logo"></use></svg></a>
+        <a class="header__logo" aria-label="Логотип компании"><svg width="163" height="35"><use xlink:href="#logo"></use></svg></a>
         <div class="header__top-container">
           <form class="header__form" action="https://echo.htmlacademy.ru" method="GET">
             <input class="header__search" type="search" placeholder="Поиск по сайту">
@@ -98,6 +98,7 @@
                   <th>Без подзарядки</th>
                 </tr>
               </table>
+            </div>
           </li>
 
           <li class="offer__item">
@@ -142,7 +143,7 @@
               <div class="categories__wrap categories__wrap--selfie">
                 <img class="categories__img" src="./img/monopods-for-selfie.svg" width="88" height="117" alt="Моноподы для селфи">
               </div>
-              <h3 class="categories__title">Моноподы для&nbspселфи</h3>
+              <h3 class="categories__title">Моноподы для&nbsp;селфи</h3>
             </a>
           </li>
 
@@ -205,7 +206,7 @@
             </li>
           </ul>
 
-          <div class="servivses__info-block">
+          <div class="servises__info-block">
             <div class="servises__wrapper servises__wrapper--delivery" id="servises__delivery">
               <p class="servises__like-h1">Доставка</p>
               <p class="servises__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
@@ -239,9 +240,9 @@
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
           <ul class="about-us__list-info">
-            <li>Деловые Линии</li>
-            <li>Автотрейдинг</li>
-            <li>ЖелДорЭкспедиция</li>
+            <li class="about-us__item">Деловые Линии</li>
+            <li class="about-us__item">Автотрейдинг</li>
+            <li class="about-us__item">ЖелДорЭкспедиция</li>
           </ul>
           <a class="about-us__btn btn" href="about-us.html">Подробнее о нас</a>
         </section>
@@ -314,7 +315,7 @@
 
     <section class="popup-map">
       <h2 class="visually-hidden">Мы на карте</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d505145.0067461913!2d114.79135105159949!3d-8.455996498779978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd22f7520fca7d3%3A0x2872b62cc456cd84!2sBali!5e0!3m2!1sen!2sua!4v1553933409165!5m2!1sen!2sua" width="960" height="559" frameborder="0" allowfullscreen></iframe>
+      <iframe class="popup-map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d505145.0067461913!2d114.79135105159949!3d-8.455996498779978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd22f7520fca7d3%3A0x2872b62cc456cd84!2sBali!5e0!3m2!1sen!2sua!4v1553933409165!5m2!1sen!2sua" width="960" height="559" allowfullscreen></iframe>
       <a class="popup-map__image" href="https://www.google.com/maps"><img src="img/map-popup.jpg" width="960" height="559" alt="Карта с нашими координатами: улица Строителей, 15"></a>
       <button class="popup-map__close" type="button">Закрыть</button>
     </section>

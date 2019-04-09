@@ -44,8 +44,8 @@ gulp.task("server", function () {
   gulp.watch("source/sass/**/*.scss", gulp.series("css"));
   gulp.watch("source/js/**/*.js", gulp.series("compressjs"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
-  gulp.watch("source/*.html").on("change", gulp.series("html_clean", "html", "refresh"));
   gulp.watch("source/img/**/*", gulp.series("clean_image", "copy_image", "sprite", "html", "refresh"));
+  gulp.watch("source/*.html").on("change", gulp.series("html_clean", "html", "refresh"));
 });
 
 gulp.task("refresh", function(done) {

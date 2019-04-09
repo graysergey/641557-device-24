@@ -1,0 +1,62 @@
+.bread-crumbs {
+  width: 1040px;
+  margin: 0 auto;
+  margin-bottom: 46px;
+  padding-top: 38px;
+}
+
+.bread-crumbs__title {
+  margin: 0;
+  margin-bottom: 23px;
+
+  font-family: "gilroyextrabold", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.15mm;
+}
+
+.bread-crumbs__wripper {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  & li {
+    position: relative;
+    margin-right: 39px;
+
+    font-family: "open_sanslight", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+
+    &:not(:last-of-type)::after {
+      position: absolute;
+      top: 9px;
+      right: -20px;
+      width: 4px;
+      height: 7px;
+      content: "";
+      background: url("../img/nav-arrow.svg");
+    }
+  }
+
+  & a {
+    font-family: "open_sanslight", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.3);
+
+    background-color: #ffffff;
+  }
+
+  & a[href]:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  & a[href]:active {
+    color: rgba(0, 0, 0, 0.1);
+  }
+}
